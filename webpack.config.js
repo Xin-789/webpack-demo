@@ -16,7 +16,11 @@ module.exports = {
                  * 最后webpack将loader返回JavaScript
                  */
                 use: ['style-loader', 'css-loader'],
-            }
+            },
+            {
+                test: /\.(png|svg|jpg|jpeg|gif)$/i,
+                type: 'asset/resource',
+            },
         ]
     }
 }
