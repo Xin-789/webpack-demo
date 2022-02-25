@@ -1,10 +1,14 @@
-const path = require('path');
+const path = require("path");
 
-module.exports = {
-    entry: './src/index.js',
+module.exports = (env) => {
+  console.log("Goal: ", env.goal); // 'local'
+  console.log("Production: ", env.production); // true
+  return {
+    entry: "./src/index.js",
     output: {
-        filename: 'main.js',
-        path: path.resolve(__dirname, 'dist'),
-        clean: true,
-    }
-}
+      filename: "main.js",
+      path: path.resolve(__dirname, "dist"),
+      clean: true,
+    },
+  };
+};
