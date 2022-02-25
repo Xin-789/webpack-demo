@@ -1,0 +1,1 @@
+(self.webpackChunkwebpack=self.webpackChunkwebpack||[]).push([[179],{138:()=>{document.body.appendChild(function(){const e=document.createElement("div");return document.createElement("button"),e.innerHTML=_.join(["hello","webpack"]," "),e}())}},e=>{e(e.s=138)}]);
